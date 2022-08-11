@@ -1,0 +1,459 @@
+@font-face {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 200;
+    src: url("/Krystie_P2_Booki/fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+   }
+
+   
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+body{
+    width: 100%;
+    max-width: 1240px;
+    margin: auto;
+    flex-direction: column;
+    font-family: 'Raleway';
+    background-color: #FFFFFF;
+    font-size: 0.9em;
+    
+}
+
+/******************   HEADER     *************/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%; 
+}
+header nav{
+    width: 20%;
+}
+header #logo{
+    width: 100px;
+}
+header ul{
+    display: flex;
+    width: 300px;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+header ul li a:hover{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    padding-top: 40px;
+}
+
+/******************   STYLE GENERAL     *************/
+section{
+    margin-top: 3%;
+}
+h2{
+    font-size: 1.2em;
+    max-width: 90%;
+    font-weight: 600;
+}
+/******************   SECTION RECHERCHE     *************/
+#bloc-recherche h1{
+font-size: 1.2em;
+padding-bottom: 10px;
+font-weight: 600;
+}
+#bloc-recherche p{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+#bloc-recherche form{
+    display: flex;
+    padding: 15px 0px 0px 15px;
+}
+#bloc-recherche form i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    -webkit-border-radius: 15px 0px 0px 15px;
+    -moz-border-radius: 15px 0px 0px 15px;
+    -ms-border-radius: 15px 0px 0px 15px;
+    -o-border-radius: 15px 0px 0px 15px;
+}
+#bloc-recherche form input{
+    width: 195px;
+    border: 0.8px solid #F2F2F2;
+}
+#bloc-recherche form button{
+    width: 100px;
+    padding: 10px;
+    border: transparent;
+    color: #FFFFFF;
+    background-color: #0065FC;
+    border-radius: 0px 10px 10px 0;
+    -webkit-border-radius: 0px 10px 10px 0;
+    -moz-border-radius: 0px 10px 10px 0;
+    -ms-border-radius: 0px 10px 10px 0;
+    -o-border-radius: 0px 10px 10px 0;
+}
+
+/******************   SECTION FILTRES     *************/
+#bloc-filtres ul{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-bottom: 3%;
+}
+#bloc-filtres ul li{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 0.8em;
+    width: fit-content; /*adapte la taille de la boite au contenu*/
+    height: 40px;
+    border: 1.5px solid #F2F2F2;
+    border-left: transparent;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+#bloc-filtres i{ /*centrer les icons par apport au cercle*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+#bloc-filtres .filtre{
+    width: 40px;
+    border: none;
+}
+#bloc-filtres .fa-solid{
+    color: #0065FC;
+    background-color:#DEEBFF ;
+    height: 40px;
+    width: 40px;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+}
+#bloc-filtres .fa-solid.fa-money-bill-wave{
+    width: 60px;
+}
+#bloc-filtres .fa-solid.fa-child-reaching, .fa-heart{
+    width: 60px;
+}
+#bloc-filtres .fa-solid.fa-heart{
+    width: 60px;
+}
+#bloc-filtres .fa-solid.fa-dog{
+    width: 60px;
+}
+#bloc-filtres .filtre p{
+    box-sizing: border-box;
+    min-width: 60px; /*defini le seuil de la taille min et max de <p></p>*/
+    max-width: 200px;
+}
+#bloc-filtres .filtre-survol:hover{
+    background-color: #F2F2F2;
+    color: #FFFFFF;
+    box-shadow: 2px 3px 3px rgba(0, 101, 252, 0.3);
+}
+#bloc-filtres #information-filtres{
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+#bloc-filtres #information-filtres i{
+    margin-right: 10px;
+}
+#bloc-filtres .fa-solid.fa-info{
+    background-color: transparent;
+    border: solid 1px lightgray;
+    width: 20px;
+    height: 20px;
+}
+
+/******************   SECTION HEBERGEMENTS     *************/
+#bloc-hebergements{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    width: 100%;
+    height: 500px;
+}
+#bloc-hebergements h3{
+    font-size: 0.8em;
+    font-weight: 700;
+    padding-bottom: 2px;
+}
+#bloc-hebergements p{
+    font-size: 0.7em;
+    font-weight: 400;
+}
+
+#bloc-hebergements #populaire i{
+    width: 10%; /*mettre une width pour permettre l'alignement des deux elements*/
+}
+#bloc-hebergements #hebergements{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 65%;
+    padding: 30px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+#bloc-hebergements #populaire{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    padding: 30px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+#bloc-hebergements .vignette-carre{
+    width: 200px;
+    height: 150px;
+    background-color: #FFFFFF;
+    border: solid 1px #F2F2F2;
+    box-shadow: 1px 3px 3px grey;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+#bloc-hebergements .vignette-rectangle{
+    width: 300px;
+    height: 120px;
+    background-color: #FFFFFF;
+    border: solid 1px #F2F2F2;
+    box-shadow: 1px 3px 3px grey;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+/*positionnement des images dans les vignettes carre*/
+#bloc-hebergements .vignette-carre .image-carre{
+    width: 192px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -ms-border-radius: 10px 10px 0px 0px;
+    -o-border-radius: 10px 10px 0px 0px;
+}
+#bloc-hebergements #hebergements .bloc-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+}
+#bloc-hebergements .description-hebergement{
+    padding: 5px 0px 5px 15px;
+}
+/*mise en forme des etoiles evaluation des hebermgements*/
+#bloc-hebergements .note-hebergements{
+    display: flex;
+    list-style-type: none;
+}
+#bloc-hebergements .note-hebergements li{
+    width: fit-content;
+}
+#bloc-hebergements .note-hebergements .fa-star{
+    color: #F2F2F2;
+    font-size: 0.7em;
+}
+#bloc-hebergements .note-hebergements .etoile-bleu{
+    color: #0065FC;
+}
+/*positionnement des images dans les vignettes rectangle*/
+#bloc-hebergements #populaire .bloc-blanc{
+    display: flex;
+}
+#bloc-hebergements .vignette-rectangle .image-rectangle{
+    width: 100px;
+    height: 112px;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+    -webkit-border-radius: 10px 0px 0px 10px;
+    -moz-border-radius: 10px 0px 0px 10px;
+    -ms-border-radius: 10px 0px 0px 10px;
+    -o-border-radius: 10px 0px 0px 10px;
+}
+#bloc-hebergements #populaire .bloc-image{
+    display: flex;
+    margin-left: 4px;
+}
+#bloc-hebergements .description-hebergement{
+    position: relative;
+    padding: 5px 0px 5px 15px;
+}
+#populaire .note-hebergements{
+    position: absolute;
+    bottom: 0;
+}
+/*afficher plus*/
+#bloc-hebergements a{ 
+    text-decoration: none;
+    color: black;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+#bloc-hebergements a:hover{
+    color: #0065FC;
+}
+
+
+/******************   SECTION ACTIVITÉS     *************/
+#bloc-activite{
+    width: 100%;
+    height: 400px;
+}
+
+#bloc-activite p{
+    font-size: 0.8em;
+    font-weight: 600;
+    width: fit-content;
+    padding: 10px 0px 0px 10px;
+}
+#bloc-activite a{
+    color: #000000;
+    text-decoration: none;
+}
+#bloc-activite #activite{
+    display: flex;
+    justify-content: space-between;
+}
+#bloc-activite .vignette{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*caracteristique du bloc de fond blanc vignette verticale*/
+#bloc-activite .vignette-vertical{ 
+    width: 100%;
+    height: 350px;
+    background-color: #FFFFFF;
+    border: solid 1px #F2F2F2;
+    box-shadow: 1px 3px 3px grey;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+/*placement de l'image dans la grande vignette*/
+#bloc-activite .bloc-image .image-verticale{
+    height: 310px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -ms-border-radius: 10px 10px 0px 0px;
+    -o-border-radius: 10px 10px 0px 0px;
+}
+/*caracteristique du bloc de fond blanc vignette horizontale*/
+#bloc-activite .vignette-horizontale{ 
+    width: 100%;
+    height: 120px;
+    background-color: #FFFFFF;
+    border: solid 1px #F2F2F2;
+    box-shadow: 1px 3px 3px grey;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+/*placement de l'image dans la petite vignette*/
+#bloc-activite .bloc-image .image-horizontale{
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -ms-border-radius: 10px 10px 0px 0px;
+    -o-border-radius: 10px 10px 0px 0px;
+}
+/*caracteristique du bloc de fond blanc vignette horizontale PLUS*/
+#bloc-activite .vignette-horizontale-plus{ 
+    width: 100%;
+    height: 180px;
+    background-color: #FFFFFF;
+    border: solid 1px #F2F2F2;
+    box-shadow: 1px 3px 3px grey;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+/*placement de l'image dans la petite vignette PLUS*/
+#bloc-activite .bloc-image .image-horizontale-plus{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -ms-border-radius: 10px 10px 0px 0px;
+    -o-border-radius: 10px 10px 0px 0px;
+}
+
+
+/******************     FOOTER     *************/
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: #F2F2F2;
+}
+footer div{
+    width: 30%;
+    height: 100px;
+}
+footer h3{
+    font-size: 0.8em;
+}
+footer li{
+    list-style: none;
+    padding: 5px 0px 0px 0px;
+}
+footer li a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 400;
+    font-size: 0.7em;
+}
+footer li a:hover{
+    text-decoration: underline;
+}
