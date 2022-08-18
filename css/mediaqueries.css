@@ -1,0 +1,393 @@
+/*------------------TABLETTE---------------*/
+@media (hover: none) {
+    a:hover { color: inherit; }
+}    
+@media only screen and (min-width: 769px) and (max-width: 991px){
+    /*HEADER*/
+    header{
+        width: 85%;
+    }
+    header ul li a:hover{
+        padding-top: 20%;
+    }
+  
+    /*RECHERCHE*/
+    #bloc-recherche h1{
+        font-size: 1.5em;
+    }
+    #bloc-recherche button{
+        display: none;
+    }
+    #bloc-recherche .petite-device{
+        display: flex;
+        width: 40px;
+}
+    #bloc-recherche .petite-device i{
+        background-color: transparent;
+
+    }
+    /*FILTRES*/
+    #bloc-filtres{
+        margin-bottom: 3%;
+    }
+    #bloc-filtres ul{
+        width: 50%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    #bloc-filtres li{
+        margin: 0% 5% 2% 0%;
+    }
+    #bloc-filtres ul .filtre{
+        width: 100%;
+    }
+    /*HEBERGEMENTS*/
+    /**populaire**/
+    #bloc-hebergements{
+        margin: auto;
+        width: 100%;
+        height: 1500px;
+        flex-direction: column-reverse;
+    }
+    #bloc-hebergements #populaire{
+        width: 100%;
+        height: 550px;
+    }
+    #bloc-hebergements #populaire h2{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #bloc-hebergements .vignette-rectangle{
+        width: 100%;
+    }
+    #bloc-hebergements #populaire .bloc-image{
+        margin: 0.6% 0% 0% 0.6%;
+    }
+    #bloc-hebergements .vignette-rectangle .image-rectangle{
+        width: 250px;
+    }
+    /**hebergements**/
+    #bloc-hebergements h2{
+        font-size: 1.5em;
+        padding-bottom: 4%;
+    }
+    #bloc-hebergements h3{
+        font-size: 1.2em;
+    }
+    #bloc-hebergements p{
+        font-size: 1em;
+    }
+    #bloc-hebergements .note-hebergements .fa-star{
+        font-size: 1em;
+    }
+    #bloc-hebergements #hebergements{
+        margin-top: 3%;
+        width: 100%;
+        height: 800px;
+    }
+    #bloc-hebergements .vignette-carre{
+        width: 250px;
+        height: 200px;
+    }
+    #bloc-hebergements .vignette-carre .image-carre{
+        width: 240px;
+        height: 100px;
+    }
+}
+
+
+/*------------------SMARTPHONE---------------*/
+    
+@media only screen and (max-width: 768px) {
+    /**HEADER**/
+    main{
+        width: 100%;
+    }
+    header{
+        flex-direction: column;
+        width: 100%;
+       }
+    header #logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+    header #logo img{
+        width: 40%;
+    }
+    header nav{
+       display: none;
+    }
+    header .navigation-mobile{
+        display: block;
+        width: 100%;
+    }
+    header .navigation-mobile ul{
+        width: 100%;
+    }
+    header .navigation-mobile li{
+        padding-bottom: 3%;
+        border-bottom: 3px solid #F2F2F2; 
+        text-align: center;
+    }
+    header .navigation-mobile li:hover{
+        border-bottom: 3px solid #0065fc;
+    }
+
+
+    /**RECHERCHE**/
+   #bloc-recherche{
+    margin-bottom: 5%;
+   }
+    #bloc-recherche h1{
+        width: 90%;
+        margin: auto;
+        font-size: 1.6em;
+        font-weight: 700;
+        padding-bottom: 3%;
+    }
+    #bloc-recherche p{
+        font-size: 1em;
+        width: 90%;
+        margin: auto;
+        padding-bottom: 5%;
+    }
+    #bloc-recherche form{
+        width: 90%;
+        margin: auto;
+    }
+
+    #bloc-recherche button{
+        display: none;
+    }
+    #bloc-recherche .petite-device{
+        display: flex;
+        width: 40px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        margin-left: -10px;
+    }
+    #bloc-recherche .petite-device i{
+        background-color: transparent;
+    }
+
+
+    /**FILTRES**/
+    #bloc-filtres{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10%;
+    }
+    #bloc-filtres ul{
+        width: 100%;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-bottom: 3%;
+    }
+    #bloc-filtres li{
+
+        margin: 0% 5% 2% 0%;
+    }
+    #bloc-filtres ul .filtre{
+        width: 100%;
+        font-size: 1.2em;
+    }
+    #bloc-filtres li p {
+        font-size: 1.2em;
+    }
+    #bloc-filtres #information-filtres{
+        font-size: 1em;
+    }
+
+
+    /**HEBERGEMENTS**/
+    #bloc-hebergements{
+        height: 1500px;
+        flex-direction: column-reverse;     
+    }
+    #bloc-hebergements{
+        margin: auto;
+        width: 100%;
+        height: 2500px; /*hauteur de la section entiere*/
+        flex-direction: column-reverse;
+    }
+    #bloc-hebergements #populaire{
+        width: 100%;
+        height: 1000px;
+    }
+    #bloc-hebergements #populaire h2{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #bloc-hebergements .vignette-rectangle{
+        width: 100%;
+    }
+    #bloc-hebergements #populaire .bloc-image{
+        margin: 0.6% 0% 0% 0.6%;
+    }
+    #bloc-hebergements .vignette-rectangle .image-rectangle{
+        width: 250px;
+    }
+    /**hebergements**/
+    #bloc-hebergements .description-hebergement{
+        margin: 2% 0% 2% 0%;
+    }
+    #bloc-hebergements h2{
+        font-size: 1.5em;
+        font-weight: 700;
+        padding-bottom: 4%;
+    }
+    #bloc-hebergements h3{
+        font-size: 1.3em;
+        font-weight: 600;
+        margin-bottom: 1%;
+    }
+    #bloc-hebergements p{
+        font-size: 1.2em;
+        margin-bottom: 1%;
+    }
+    #bloc-hebergements #populaire .etoile{
+        font-size: 1.5em;
+    }
+    #bloc-hebergements #populaire .note-hebergements .fa-star{
+        font-size: 0.9em;
+    }
+    #bloc-hebergements #populaire{
+        width: 100%;
+        height: 700px;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+    #bloc-hebergements #hebergements{
+        width: 100%;
+        height: 2000px;
+        background-color: #FFFFFF;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+    #bloc-hebergements .vignette-rectangle{ /*populaire*/
+        width: 100%;
+        height: 150px;
+    
+    }
+    #bloc-hebergements .vignette-rectangle .image-rectangle{
+        width: 150px;
+        height: 143px;
+        padding: 1% 0% 0% 2%;
+        border-radius: 15px 0px 0px 15px;
+        -webkit-border-radius: 15px 0px 0px 15px;
+        -moz-border-radius: 15px 0px 0px 15px;
+        -ms-border-radius: 15px 0px 0px 15px;
+        -o-border-radius: 15px 0px 0px 15px;
+    }
+ 
+    #bloc-hebergements .vignette-carre{ /*hebergements*/
+        width: 100%;
+        height: 230px;
+    }
+    #bloc-hebergements #hebergements .bloc-image{
+        margin-top: 0;
+    }
+    #bloc-hebergements .vignette-carre .image-carre{
+        width: 100%;
+        height: 140px;
+        padding: 1% 1% 0% 1%;
+        border-radius: 15px 15px 0px 0px;
+        -webkit-border-radius: 15px 15px 0px 0px;
+        -moz-border-radius: 15px 15px 0px 0px;
+        -ms-border-radius: 15px 15px 0px 0px;
+        -o-border-radius: 15px 15px 0px 0px;
+    }
+    #bloc-hebergements .vignette-carre .fa-star{
+        font-size: 0.9em;
+    }
+    #bloc-hebergements .description-hebergements{ /*espace entre les lignes descriptives*/
+        display: flex;
+        justify-content: space-around;
+    }
+    /*afficher plus*/
+    #bloc-hebergements .afficher-plus{ 
+        font-size: 1.2em;
+    }
+    
+    
+    /**ACTIVITES**/
+    #bloc-activite{
+        width: 90%;
+        margin: auto;
+        height: 1600px;
+    }
+    #bloc-activite h2{
+        font-size: 1.5em;
+        font-weight: 700;
+        margin-bottom: 10%;
+    }
+    #bloc-activite p{
+        font-size: 1em;
+        font-weight: 600;
+    }
+    #bloc-activite #activite{
+        flex-direction: column;
+    }
+    #bloc-activite .vignette{
+        width: 100%;
+    }
+    #activite a{
+        margin-bottom: 5%;
+    }
+    #bloc-activite .vignette-vertical{ 
+        width: 100%;
+        height: 230px;
+    }
+    #bloc-activite .bloc-image .image-verticale{
+        width:100%;
+        height: 170px;
+    }    
+    #bloc-activite .vignette-horizontale{ 
+        width: 100%;
+        height: 230px;
+    }
+    #bloc-activite .bloc-image .image-horizontale{
+        width:100%;
+        height: 170px;
+    }    #bloc-activite .vignette-horizontale-plus{ 
+        width: 100%;
+        height: 230px;
+    }
+    #bloc-activite .bloc-image .image-horizontale-plus{
+        width:100%;
+        height: 170px;
+    }    
+
+    /**FOOTER**/
+    footer{
+        flex-direction: column;
+        align-items: flex-start;
+        height: 500px;
+    }
+    footer h3{
+        font-size: 1.2em;
+        font-weight: 700;
+        width: 100%;
+    }
+    footer li {
+        font-size: 1.5em;
+    }
+    footer div{
+        width: 100%;
+        height: auto;
+    }
+}

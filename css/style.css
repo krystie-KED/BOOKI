@@ -19,8 +19,11 @@ body{
     flex-direction: column;
     font-family: 'Raleway';
     background-color: #FFFFFF;
-    font-size: 0.9em;
-    
+    font-size: 0.9em;   
+}
+main{
+    margin: auto;
+    width: 90%;
 }
 
 /******************   HEADER     *************/
@@ -47,12 +50,14 @@ header ul li a{
     text-decoration: none;
     color: #000000;
 }
-header ul li a:hover{
+header .navigation-grand-ecran ul li a:hover{
     color: #0065FC;
     border-top: 2px solid #0065FC;
-    padding-top: 40px;
+    padding-top: 30%;
 }
-
+header .navigation-mobile{
+    display: none;
+}
 /******************   STYLE GENERAL     *************/
 section{
     margin-top: 3%;
@@ -60,12 +65,14 @@ section{
 h2{
     font-size: 1.2em;
     max-width: 90%;
+    height: 0px;
     font-weight: 600;
+    margin: 0;
 }
+
 /******************   SECTION RECHERCHE     *************/
 #bloc-recherche h1{
 font-size: 1.2em;
-padding-bottom: 10px;
 font-weight: 600;
 }
 #bloc-recherche p{
@@ -74,7 +81,7 @@ font-weight: 600;
 }
 #bloc-recherche form{
     display: flex;
-    padding: 15px 0px 0px 15px;
+    padding: 15px 0px 0px 0px;
 }
 #bloc-recherche form i{
     display: flex;
@@ -104,13 +111,19 @@ font-weight: 600;
     -ms-border-radius: 0px 10px 10px 0;
     -o-border-radius: 0px 10px 10px 0;
 }
+#bloc-recherche .petite-device{
+    display: none;
+}
 
 /******************   SECTION FILTRES     *************/
+#bloc-filtres{
+    margin-top: 20px;
+}
 #bloc-filtres ul{
     display: flex;
     justify-content: space-between;
     width: 70%;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
 }
 #bloc-filtres ul li{
     display: flex;
@@ -191,7 +204,7 @@ font-weight: 600;
 #bloc-hebergements{
     display: flex;
     justify-content: space-between;
-    margin-top: 2%;
+    margin-top: 3%;
     width: 100%;
     height: 500px;
 }
@@ -237,7 +250,6 @@ font-weight: 600;
     width: 200px;
     height: 150px;
     background-color: #FFFFFF;
-    border: solid 1px #F2F2F2;
     box-shadow: 1px 3px 3px grey;
     border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -249,7 +261,6 @@ font-weight: 600;
     width: 300px;
     height: 120px;
     background-color: #FFFFFF;
-    border: solid 1px #F2F2F2;
     box-shadow: 1px 3px 3px grey;
     border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -271,12 +282,12 @@ font-weight: 600;
 #bloc-hebergements #hebergements .bloc-image{
     display: flex;
     justify-content: center;
-    margin-top: 4px;
+    margin-top: 2%;
 }
 #bloc-hebergements .description-hebergement{
-    padding: 5px 0px 5px 15px;
+    padding: 2% 0% 2% 8%;
 }
-/*mise en forme des etoiles evaluation des hebermgements*/
+/*mise en forme des etoiles evaluation des hebergements*/
 #bloc-hebergements .note-hebergements{
     display: flex;
     list-style-type: none;
@@ -307,11 +318,11 @@ font-weight: 600;
 }
 #bloc-hebergements #populaire .bloc-image{
     display: flex;
-    margin-left: 4px;
+    margin: 1.5% 0% 0% 2%;
 }
 #bloc-hebergements .description-hebergement{
     position: relative;
-    padding: 5px 0px 5px 15px;
+    padding: 2% 0% 2% 8%;
 }
 #populaire .note-hebergements{
     position: absolute;
@@ -325,7 +336,7 @@ font-weight: 600;
     font-weight: 600;
 }
 #bloc-hebergements a:hover{
-    color: #0065FC;
+    color: #DEEBFF;
 }
 
 
@@ -334,12 +345,14 @@ font-weight: 600;
     width: 100%;
     height: 400px;
 }
-
+#bloc-activite h2{
+    margin: 5% 0% 3% 0%;
+}
 #bloc-activite p{
     font-size: 0.8em;
     font-weight: 600;
     width: fit-content;
-    padding: 10px 0px 0px 10px;
+    padding: 3.5% 0% 0% 5%;
 }
 #bloc-activite a{
     color: #000000;
@@ -360,7 +373,6 @@ font-weight: 600;
     width: 100%;
     height: 350px;
     background-color: #FFFFFF;
-    border: solid 1px #F2F2F2;
     box-shadow: 1px 3px 3px grey;
     border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -370,20 +382,20 @@ font-weight: 600;
 }
 /*placement de l'image dans la grande vignette*/
 #bloc-activite .bloc-image .image-verticale{
+    width:100%;
     height: 310px;
     object-fit: cover;
-    border-radius: 10px 10px 0px 0px;
-    -webkit-border-radius: 10px 10px 0px 0px;
-    -moz-border-radius: 10px 10px 0px 0px;
-    -ms-border-radius: 10px 10px 0px 0px;
-    -o-border-radius: 10px 10px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
+    -webkit-border-radius: 15px 15px 0px 0px;
+    -moz-border-radius: 15px 15px 0px 0px;
+    -ms-border-radius: 15px 15px 0px 0px;
+    -o-border-radius: 15px 15px 0px 0px;
 }
 /*caracteristique du bloc de fond blanc vignette horizontale*/
 #bloc-activite .vignette-horizontale{ 
     width: 100%;
     height: 120px;
     background-color: #FFFFFF;
-    border: solid 1px #F2F2F2;
     box-shadow: 1px 3px 3px grey;
     border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -396,18 +408,17 @@ font-weight: 600;
     width: 100%;
     height: 80px;
     object-fit: cover;
-    border-radius: 10px 10px 0px 0px;
-    -webkit-border-radius: 10px 10px 0px 0px;
-    -moz-border-radius: 10px 10px 0px 0px;
-    -ms-border-radius: 10px 10px 0px 0px;
-    -o-border-radius: 10px 10px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
+    -webkit-border-radius: 15px 15px 0px 0px;
+    -moz-border-radius: 15px 15px 0px 0px;
+    -ms-border-radius: 15px 15px 0px 0px;
+    -o-border-radius: 15px 15px 0px 0px;
 }
 /*caracteristique du bloc de fond blanc vignette horizontale PLUS*/
 #bloc-activite .vignette-horizontale-plus{ 
     width: 100%;
     height: 180px;
     background-color: #FFFFFF;
-    border: solid 1px #F2F2F2;
     box-shadow: 1px 3px 3px grey;
     border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -420,11 +431,11 @@ font-weight: 600;
     width: 100%;
     height: 140px;
     object-fit: cover;
-    border-radius: 10px 10px 0px 0px;
-    -webkit-border-radius: 10px 10px 0px 0px;
-    -moz-border-radius: 10px 10px 0px 0px;
-    -ms-border-radius: 10px 10px 0px 0px;
-    -o-border-radius: 10px 10px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
+    -webkit-border-radius: 15px 15px 0px 0px;
+    -moz-border-radius: 15px 15px 0px 0px;
+    -ms-border-radius: 15px 15px 0px 0px;
+    -o-border-radius: 15px 15px 0px 0px;
 }
 
 
@@ -436,6 +447,8 @@ footer{
     width: 100%;
     height: 150px;
     background-color: #F2F2F2;
+    margin-top: 3%;
+    padding-left: 5%;
 }
 footer div{
     width: 30%;
