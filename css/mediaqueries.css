@@ -1,7 +1,4 @@
-/*------------------TABLETTE---------------*/
-@media (hover: none) {
-    a:hover { color: inherit; }
-}    
+/*------------------TABLETTE---------------*/  
 @media only screen and (min-width: 769px) and (max-width: 991px){
     /*HEADER*/
     header{
