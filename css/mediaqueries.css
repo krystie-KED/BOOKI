@@ -1,5 +1,5 @@
 /*------------------TABLETTE---------------*/  
-@media only screen and (min-width: 769px) and (max-width: 991px){
+@media only screen and (min-width: 769px) and (max-width: 960px){
     /*HEADER*/
     header{
         width: 85%;
@@ -59,10 +59,21 @@
         width: 100%;
     }
     #bloc-hebergements #populaire .bloc-image{
-        margin: 0.6% 0% 0% 0.6%;
+        margin: 0;
     }
     #bloc-hebergements .vignette-rectangle .image-rectangle{
-        width: 250px;
+        width: 330px;
+        height: 120px;
+    }
+    #bloc-hebergements #populaire .description-hebergement{
+        padding: 2% 0% 2% 1%;
+    
+    }
+    #bloc-hebergements .note-hebergements li{
+        padding-bottom: 2%;
+    }
+    #bloc-hebergements #hebergements .note-hebergements li{
+        padding-top: 2%;
     }
     /**hebergements**/
     #bloc-hebergements h2{
@@ -132,7 +143,11 @@
     header .navigation-mobile li:hover{
         border-bottom: 3px solid #0065fc;
     }
-
+    header .navigation-grand-ecran ul li a:hover{
+        color: #0065fc;
+        border-top: transparent;
+        padding: 0;
+    }
 
     /**RECHERCHE**/
    #bloc-recherche{
@@ -182,13 +197,15 @@
     }
     #bloc-filtres ul{
         width: 100%;
+        min-width: 300px;
+        max-width: 768px;
+        height: 200px;
         margin: auto;
         flex-wrap: wrap;
         justify-content: flex-start;
         margin-bottom: 3%;
     }
     #bloc-filtres li{
-
         margin: 0% 5% 2% 0%;
     }
     #bloc-filtres ul .filtre{
@@ -227,14 +244,14 @@
         width: 100%;
     }
     #bloc-hebergements #populaire .bloc-image{
-        margin: 0.6% 0% 0% 0.6%;
+        margin: 0;
     }
     #bloc-hebergements .vignette-rectangle .image-rectangle{
         width: 250px;
     }
     /**hebergements**/
     #bloc-hebergements .description-hebergement{
-        margin: 2% 0% 2% 0%;
+        margin-bottom: 1%;
     }
     #bloc-hebergements h2{
         font-size: 1.5em;
@@ -252,6 +269,7 @@
     }
     #bloc-hebergements #populaire .etoile{
         font-size: 1.5em;
+        padding-bottom: 2%;
     }
     #bloc-hebergements #populaire .note-hebergements .fa-star{
         font-size: 0.9em;
@@ -278,12 +296,10 @@
     #bloc-hebergements .vignette-rectangle{ /*populaire*/
         width: 100%;
         height: 150px;
-    
     }
     #bloc-hebergements .vignette-rectangle .image-rectangle{
-        width: 150px;
-        height: 143px;
-        padding: 1% 0% 0% 2%;
+        width: 200px;
+        height: 150px;
         border-radius: 15px 0px 0px 15px;
         -webkit-border-radius: 15px 0px 0px 15px;
         -moz-border-radius: 15px 0px 0px 15px;
@@ -325,7 +341,7 @@
     #bloc-activite{
         width: 90%;
         margin: auto;
-        height: 1600px;
+        height: 1700px;
     }
     #bloc-activite h2{
         font-size: 1.5em;
@@ -371,9 +387,12 @@
 
     /**FOOTER**/
     footer{
-        flex-direction: column;
-        align-items: flex-start;
         height: 500px;
+    }
+    footer .footer-container{
+        display: flex;
+        flex-direction: column;
+
     }
     footer h3{
         font-size: 1.2em;
@@ -386,5 +405,12 @@
     footer div{
         width: 100%;
         height: auto;
+    }
+    footer div:nth-child(1){
+        
+        margin:5% 0% 10% 0%;
+    }
+    footer div:nth-child(2){
+        margin-bottom: 10%;
     }
 }

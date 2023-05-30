@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @font-face {
     font-family: "Raleway";
     font-style: normal;
-    font-weight: 200;
-    src: url("/Krystie_P2_Booki/fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+    
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') format("truetype");
    }
 
    
@@ -13,8 +14,7 @@
     width: 100%;
 }
 body{
-    width: 100%;
-    max-width: 1240px;
+    width: 100%; 
     margin: auto;
     flex-direction: column;
     font-family: 'Raleway';
@@ -22,6 +22,7 @@ body{
     font-size: 0.9em;   
 }
 main{
+    max-width: 1240px;
     margin: auto;
     width: 90%;
 }
@@ -34,17 +35,18 @@ header{
     margin-top: 3%; 
 }
 header nav{
-    width: 20%;
+    width: 30%;
 }
 header #logo{
     width: 100px;
 }
-header ul{
+header nav ul{
     display: flex;
-    width: 300px;
+    width: 100%;
 }
 header ul li{
     list-style: none;
+    text-align: right; /*pour que le text menu soit aligner avec le contenu*/
 }
 header ul li a{
     text-decoration: none;
@@ -53,11 +55,9 @@ header ul li a{
 header .navigation-grand-ecran ul li a:hover{
     color: #0065FC;
     border-top: 2px solid #0065FC;
-    padding-top: 30%;
+    padding-top: 25%;
 }
-header .navigation-mobile{
-    display: none;
-}
+
 /******************   STYLE GENERAL     *************/
 section{
     margin-top: 3%;
@@ -118,6 +118,7 @@ font-weight: 600;
 /******************   SECTION FILTRES     *************/
 #bloc-filtres{
     margin-top: 20px;
+    width: 100%;
 }
 #bloc-filtres ul{
     display: flex;
@@ -181,7 +182,7 @@ font-weight: 600;
 }
 #bloc-filtres .filtre-survol:hover{
     background-color: #F2F2F2;
-    color: #FFFFFF;
+    color: #0065FC;
     box-shadow: 2px 3px 3px rgba(0, 101, 252, 0.3);
 }
 #bloc-filtres #information-filtres{
@@ -206,7 +207,7 @@ font-weight: 600;
     justify-content: space-between;
     margin-top: 3%;
     width: 100%;
-    height: 500px;
+    height: 650px;
 }
 #bloc-hebergements h3{
     font-size: 0.8em;
@@ -250,7 +251,7 @@ font-weight: 600;
     width: 200px;
     height: 150px;
     background-color: #FFFFFF;
-    box-shadow: 1px 3px 3px grey;
+    box-shadow: 1px 3px 3px lightgray;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -261,7 +262,7 @@ font-weight: 600;
     width: 300px;
     height: 120px;
     background-color: #FFFFFF;
-    box-shadow: 1px 3px 3px grey;
+    box-shadow: 1px 3px 3px lightgray;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -284,9 +285,6 @@ font-weight: 600;
     justify-content: center;
     margin-top: 2%;
 }
-#bloc-hebergements .description-hebergement{
-    padding: 2% 0% 2% 8%;
-}
 /*mise en forme des etoiles evaluation des hebergements*/
 #bloc-hebergements .note-hebergements{
     display: flex;
@@ -307,7 +305,7 @@ font-weight: 600;
     display: flex;
 }
 #bloc-hebergements .vignette-rectangle .image-rectangle{
-    width: 100px;
+    width: 140px;
     height: 112px;
     object-fit: cover;
     border-radius: 10px 0px 0px 10px;
@@ -318,11 +316,16 @@ font-weight: 600;
 }
 #bloc-hebergements #populaire .bloc-image{
     display: flex;
-    margin: 1.5% 0% 0% 2%;
+    margin: 1.5% 0% 0% 1.5%;
+}
+/*description des hebergements*/
+#bloc-hebergements #hebergements .description-hebergement{
+    padding: 2% 0% 2% 8%;
+
 }
 #bloc-hebergements .description-hebergement{
     position: relative;
-    padding: 2% 0% 2% 8%;
+    padding: 2% 0% 2% 1%;
 }
 #populaire .note-hebergements{
     position: absolute;
@@ -336,7 +339,7 @@ font-weight: 600;
     font-weight: 600;
 }
 #bloc-hebergements a:hover{
-    color: #DEEBFF;
+    color: #0065FC;
 }
 
 
@@ -373,7 +376,7 @@ font-weight: 600;
     width: 100%;
     height: 350px;
     background-color: #FFFFFF;
-    box-shadow: 1px 3px 3px grey;
+    box-shadow: 1px 3px 3px lightgray;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -396,7 +399,7 @@ font-weight: 600;
     width: 100%;
     height: 120px;
     background-color: #FFFFFF;
-    box-shadow: 1px 3px 3px grey;
+    box-shadow: 1px 3px 3px lightgray;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -419,7 +422,7 @@ font-weight: 600;
     width: 100%;
     height: 180px;
     background-color: #FFFFFF;
-    box-shadow: 1px 3px 3px grey;
+    box-shadow: 1px 3px 3px lightgray;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -442,13 +445,19 @@ font-weight: 600;
 /******************     FOOTER     *************/
 footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 150px;
     background-color: #F2F2F2;
     margin-top: 3%;
     padding-left: 5%;
+}
+footer .footer-container{
+    width: 100%;
+    max-width: 1240px;
+    display: flex;
+    justify-content: space-between;
 }
 footer div{
     width: 30%;
